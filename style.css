@@ -1,0 +1,72 @@
+.border-box {
+  box-sizing: border-box;
+}
+
+
+/*style rule to set font size of main heading for website*/
+h1 {
+  font-size: 48px;
+}
+
+/*grouped style rule to align text, use preferred font,change background color, text color, and border settings for body header and footer*/
+body header, footer  {
+  text-align: center;
+  font-family: 'Futura PT', Montserrat,'Times New Roman', Georgia, Times, serif;
+  background-color:#0077B6;
+  color:white;
+  border: 1px solid #0077B6;
+}
+
+/*grouped style rules for main's section and article containers*/
+main section, main article {
+  font-family: 'Epilogue', sans-serif;
+  padding:10px;
+  background-color:#8ecae6;
+  color:white;
+  border: #0077B6 solid 1px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+main article {
+  margin-left: float;
+}
+
+/*class to center text for specific html elements such as headings*/
+.text-centered {
+  text-align: center;
+}
+
+/*class to center and round image*/
+.image-centered {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 50%;
+}
+
+/*pseudo classes to style links*/
+a:link {
+  color:white;
+}
+a:visited {
+  color:#0077B6;
+}
+a:hover {
+  color:firebrick;
+}
+a:active {
+  color:royalblue;
+}
+
+/*class to style fontawesome icons*/
+.fab {
+  font-size: 58px;
+  margin: 5px;
+}
+
+/*class to style fontawesome icon*/
+.fas {
+  font-size: 58px;
+  margin: 5px;
+}
