@@ -21,9 +21,8 @@
     <!--Start of main-->
     <main>
       <!--section container here to display an image and a small introductory greeting-->
-      
       <section>
-        <img class="image-centered" src="portfolio-pic.jpg" alt="Image of Dhruv Tyagi"/>
+        <img class="image-centered" src="images/portfolio-pic.jpg" alt="Image of Dhruv Tyagi"/>
         <h2 class="text-centered">Welcome!</h2>
         <p class="text-centered">
           From a young age, I've always had a desire to create. When I discovered web development, I finally felt as if I had an outlet for my creativity and curiosity. In other words, my life has changed, and I'm so excited for the journey ahead!
@@ -31,24 +30,59 @@
       </section>
       <section>
          <h2 class="text-centered">Things to know about me</h2>
-        <ul>
-          <li><strong>Current location:</strong> Champaign, IL, USA</li>
-          <li><strong>Education:</strong> BSc. in Physics from the University of Illinois at Urbana-Champaign</li>
-          <li><strong>Interests:</strong> Entrepreneurship, Astronomy, History & IR</li>
-          <li><strong>Hobbies:</strong> Coding(of course!), Soccer, Hip-hop, Reading, Public Speaking, Blogging</li>
-        </ul>
+          <ul>
+            <li><strong>Current location:</strong> Champaign, IL, USA</li>
+            <li><strong>Education:</strong> BSc. in Physics from the University of Illinois at Urbana-Champaign</li>
+            <li><strong>Interests:</strong> Entrepreneurship, Astronomy, History & IR</li>
+            <li><strong>Hobbies:</strong> Coding(of course!), Soccer, Hip-hop, Reading, Public Speaking, Blogging</li>
+            <li><strong>Languages:</strong> HTML, CSS, JS</li>
+          </ul>
       </section>
       <!-- End of section container and start of article container to give visitor some more info on me-->
+
+      <section>
+        <h2 class="text-centered">Projects</h2>
+        <div class="projects">
+          <div class="project">
+          <h4>Project 1</h4>
+          <img src="images/placeholder.png" alt="">
+          </div>
+          <div class="project">
+          <h4>Project 2</h4>
+          <img src="images/placeholder.png" alt="">
+          </div>
+          <div class="project">
+          <h4>Project 3</h4>
+          <img src="images/placeholder.png">
+          </div>
+        </div>
+      </section>
             
       <!--article container that uses icons to provide links to profiles on other platforms-->
-      <article>
-        <h2 class="text-centered">Contact Me</h2>
-      <p class="text-centered">
-        <a href="https://github.com/dhruvthedeveloper"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/dhruv-tyagi-1903/"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:tintin.tyagi@gmail.com"><i class="fas fa-envelope-square"></i></a>
-      </p>
-      </article>
+      <section>
+        <div>
+          <h2 class="text-centered">Contact Me</h2>
+          <!--added Formspree action to form functionality-->
+          <form action="https://formspree.io/f/xeqpkdop" method="post">
+            <p><label for="user-name">Name</label>
+            <input id="user-name" name="name" placeholder="Full name" type="text" required/></p>
+            <p>
+            <label for="user-email">Email</label>
+            <input id="user-email" name="email" type="email" placeholder="you@example.com" required/>
+            </p>
+            <p>
+            <label for="user-message">Your Message</label>
+            <textarea id="user-message" name="message" placeholder="Enter text here" required maxlength="200"></textarea>
+            </p>
+            <button type="submit">Submit</button>
+          </form>
+          <p class="text-centered">
+            <a href="https://github.com/dhruvthedeveloper"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/dhruv-tyagi-1903/"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:tintin.tyagi@gmail.com"><i class="fas fa-envelope-square"></i></a>
+          </p>
+        </div>
+      </section>
     </main>
     <!--end of main-->
 
