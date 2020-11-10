@@ -94,8 +94,9 @@
   a:link {
     color:white;
   }
+  /*temporary fix to link visting problem*/
   a:visited {
-    color:#0077B6;
+    color:white;
   }
   a:hover {
     color:firebrick;
