@@ -10,22 +10,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Epilogue&display=swap" rel="stylesheet">
     <!--link to import normalize.css to ensure compatibility across all browsers-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <!-- Header that displays the main heading of the website as well as a small heading below-->
     <header class="border-box text-centered">
       <h1>Dhruv Tyagi</h1>
       <h4>Your Friendly Neighborhood Web Developer</h4>
+      <nav>
+        <!--consider adding the nav functionality but change link colors-->
+          <ul>
+              <li><a href="#">Home </a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+      </nav>
     </header>
     <!--Start of main-->
     <main>
       <!--section container here to display an image and a small introductory greeting-->
-      <section>
+      <section id="home">
         <img class="image-centered" src="images/portfolio-pic.jpg" alt="Image of Dhruv Tyagi"/>
         <h2 class="text-centered">Welcome!</h2>
         <p class="text-centered">
           From a young age, I've always had a desire to create. When I discovered web development, I finally felt as if I had an outlet for my creativity and curiosity. In other words, my life has changed, and I'm so excited for the journey ahead!
+        </p>
+        <p class="text-centered">
+            As a junior developer, I am particularly eager to join a team of like-minded developers who share my passion for clean, efficient, and powerful code. Furthermore, I'm a firm believer in the idea that everyone knows something that you don't and to that end,
+            I am looking forward to learning so much more about the wonderful world of code and programming from those around me!
         </p>
       </section>
       <section>
@@ -39,21 +52,27 @@
           </ul>
       </section>
       <!-- End of section container and start of article container to give visitor some more info on me-->
-
+      <!--Need to work on placeholder content and structure-->
       <section>
         <h2 class="text-centered">Projects</h2>
         <div class="projects">
           <div class="project">
-          <h4>Project 1</h4>
+          <h4>Project 1(Title)</h4>
+          <p>Description of project: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae turpis non massa condimentum imperdiet. Etiam dictum sapien sem, a fringilla sapien interdum sit amet.</p>
           <img src="images/placeholder.png" alt="">
+          <a href="#">Link GitHub Repo</a>
           </div>
           <div class="project">
-          <h4>Project 2</h4>
+          <h4>Project 2(Title)</h4>
+          <p>Description of project: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae turpis non massa condimentum imperdiet. Etiam dictum sapien sem, a fringilla sapien interdum sit amet.</p>
           <img src="images/placeholder.png" alt="">
+          <a href="#">Link to GitHub Repo</a>
           </div>
           <div class="project">
-          <h4>Project 3</h4>
-          <img src="images/placeholder.png">
+          <h4>Project 3(Title)</h4>
+          <p>Description of project: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae turpis non massa condimentum imperdiet. Etiam dictum sapien sem, a fringilla sapien interdum sit amet.</p>
+          <img src="images/placeholder.png" alt="">
+          <a href="#">Link to GitHub Repo</a>
           </div>
         </div>
       </section>
@@ -77,8 +96,8 @@
             <button type="submit">Submit</button>
           </form>
           <p class="text-centered">
-            <a href="https://github.com/dhruvthedeveloper"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/dhruv-tyagi-1903/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/dhruvthedeveloper" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/dhruv-tyagi-1903/" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="mailto:tintin.tyagi@gmail.com"><i class="fas fa-envelope-square"></i></a>
           </p>
         </div>
