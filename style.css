@@ -1,124 +1,150 @@
 .border-box {
-  box-sizing: border-box;
-}
-
-
-/*style rule to set font size of main heading for website*/
-h1 {
-  font-size: 48px;
-}
-
-/*grouped style rule to align text, use preferred font,change background color, text color, and border settings for body header and footer*/
-body header, footer  {
-  text-align: center;
-  font-family: 'Futura PT', Montserrat,'Times New Roman', Georgia, Times, serif;
-  background-color:#0077B6;
-  color:white;
-  border: 1px solid #0077B6;
-}
-
-/*grouped style rules for main's section and article containers*/
-main section, main article {
-  font-family: 'Epilogue', sans-serif;
-  padding:10px;
-  background-color:#8ecae6;
-  color:white;
-  border: #0077B6 solid 3px;
-  margin-left: auto;
-  margin-right: auto;
+    box-sizing: border-box;
   }
-
-main article {
-  margin-left: float;
-}
-
-.projects {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: column
-}
-
-.project {
- flex-basis: 25%;
- margin: 0 1.5%;
-}
-
-.project img {
-  width: 100%;
-}
-
-/*class to center text for specific html elements such as headings*/
-.text-centered {
-  text-align: center;
-}
-
-/*class to center and round image*/
-.image-centered {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  border-radius: 50%;
-  max-width: 100%;
-  height: auto;
-}
-
-/*pseudo classes to style links*/
-a:link {
-  color:white;
-}
-a:visited {
-  color:#0077B6;
-}
-a:hover {
-  color:firebrick;
-}
-a:active {
-  color:royalblue;
-}
-
-form p {
-    margin: 20px;
+  
+  
+  /*style rule to set font size of main heading for website*/
+  h1 {
+    font-size: 48px;
+  }
+  
+  /*grouped style rule to align text, use preferred font,change background color, text color, and border settings for body header and footer*/
+  body header, footer  {
+    text-align: center;
+    font-family: 'Futura PT', Montserrat,'Times New Roman', Georgia, Times, serif;
+    background-color:#0077B6;
+    color:white;
+    border: 1px solid #0077B6;
+  }
+  
+  /*need to work on nav bar*/
+  header nav {
     display: flex;
-}
-
-form label {
-  margin-bottom: 0 20px 0 0;
-  font-family: 'Epilogue', Times, serif;
-  font-size: 18px;
-}
-
-
-form button {
-  margin-bottom: 0 20px 20px 0;
-  font-family: 'Epilogue', Times, serif;
-  font-size: 18px;
-}
-
-form input, form textarea {
-    flex: 1;
-    margin-left: 20px;
-}
-
-/*class to style fontawesome icons*/
-.fab {
-  font-size: 58px;
-  margin: 5px;
-}
-
-/*class to style fontawesome icon*/
-.fas {
-  font-size: 58px;
-  margin: 5px;
-}
-
-
-@media screen and (max-width: 600px){
-  /*why isn't this working?*/
-  .project {
-    flex-direction: row;
+    justify-content: center;
   }
+
+  header nav ul {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px 0 0;
+  }
+
+  /*want this to ensure navbar links stay the same color
+  after bring visited but it isn't working yet
+  header nav ul li a:visited {
+    color: white;
+  }
+  */
+
+  
+
+  /*grouped style rules for main's section and article containers*/
+  main section, main article {
+    font-family: 'Epilogue', sans-serif;
+    padding:10px;
+    background-color:#8ecae6;
+    color:white;
+    border: #0077B6 solid 12.5px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+  
+  main article {
+    margin-left: float;
+  }
+  
   .projects {
-    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
-}
+  
+  .project {
+   flex-basis: 30%;
+   margin: 0 1.5%;
+  }
+  
+  .project img {
+    width: 100%;
+  }
+  
+  /*class to center text for specific html elements such as headings*/
+  .text-centered {
+    text-align: center;
+  }
+  
+  /*class to center and round image*/
+  .image-centered {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /*pseudo classes to style links*/
+  a:link {
+    color:white;
+  }
+  a:visited {
+    color:#0077B6;
+  }
+  a:hover {
+    color:firebrick;
+  }
+  a:active {
+    color:royalblue;
+  }
+  
+  form p {
+      margin: 20px;
+      display: flex;
+  }
+  
+  form label {
+    margin-bottom: 0 20px 0 0;
+    font-family: 'Epilogue', Times, serif;
+    font-size: 18px;
+  }
+  
+  
+  form button {
+    margin-left: 20px;
+    padding: 5px;
+    font-family: 'Epilogue', Times, serif;
+    font-size: 18px;
+  }
+  
+  form input, form textarea {
+      flex: 1;
+      margin-left: 20px;
+  }
+  
+  /*class to style fontawesome icons*/
+  .fab {
+    font-size: 58px;
+    margin: 5px;
+  }
+  
+  /*class to style fontawesome icon*/
+  .fas {
+    font-size: 58px;
+    margin: 5px;
+  }
+  
+  /*media queries for responsive navigation*/
+  @media screen and (min-width: 600px){
+
+    .projects {
+      flex-direction: row;
+    }
+  }
+  
